@@ -29,59 +29,7 @@ It has been widely acknowledged that under-exposure causes a variety of visual q
 <img src="teaser/teaser_DRBN.png" > 
 
 ## Installation:
-
-1. Clone this repo
-2. Install PyTorch and dependencies from http://pytorch.org 
-3. For stage II training, you need to download [[VGG16 Model]](https://download.pytorch.org/models/vgg16-397923af.pth) and put it in DRBL-stage2/src/.
-4. For testing, you can directly run test.sh in DRBL-stage1/src/ and DRBL-stage2/src/.
-5. For training, you can directly run train.sh in DRBL-stage1/src/ and DRBL-stage2/src/.
-6. You can download our dataset here: [[Dataset Link]](https://pan.baidu.com/s/149C65GCvg4lVKLDQqFdvqw) (extracted code: 22im) [Partly updated on 27 March]
-
-（**Note**: the code is suitable for PyTorch 0.4.1）
-
-## Detailed Guidance:
-
-Thank you for your attention!
-
-1. How could I reproduce the objective evaluation results in Table I in the paper？<br>
-You can run sh ./DRBL-stage1/src/test.sh <br>
-The 1st stage offers better objective results while the other produces better overall subjective visual quality.
-In our paper, the methods involved in objective comparisons are not trained with adversarial/quality losses. <br>
-
-2. Data structure
-You can see src\data\lowlight.py and src\data\lowlighttest.py for those details in the code of each stage.<br><br>
-In the 1st stage: <br>
-hr --> normal-light images, lr --> low-light images <br>
-lr and hr are paired. <br> <br>
-In the 2nd stage: <br>
-hr --> normal-light images, lr --> low-light images <br>
-lr and hr are paired. <br>
-lrr --> low-light images in the real applications, hq --> high quality dataset <br>
-
-3. Dataset
-You can obtain the dataset via: [[Dataset Link]](https://pan.baidu.com/s/149C65GCvg4lVKLDQqFdvqw) (extracted code: 22im) [Partly updated on 27 March] <br>
-We introduce these collections here: <br>
-a) Our_low: real captured low-light images in LOL for training; <br>
-b) Our_normal: real captured normal-light images in LOL for training; <br>
-c) Our_low_test: real captured low-light images in LOL for testing; <br>
-d) Our_normal_test: real captured normal-light images in LOL for testing; <br>
-e) AVA_good_2: the high-quality images selected from the AVA dataset based on the MOS values; <br>
-f) Low_real_test_2_rs: real low-light images selected from LIME, NPE, VV, DICM, the typical unpaired low-light testing datasets; <br>
-g) Low_degraded: synthetic low-light images in LOL for training; <br>
-h) Normal: synthetic normal-light images in LOL for training; <br>
-
-4. Image number in LOL <br>
-LOL: Chen Wei, Wenjing Wang, Wenhan Yang, and Jiaying Liu. "Deep Retinex Decomposition for Low-Light Enhancement", BMVC, 2018. [[Baiduyun (extracted code: sdd0)]](https://pan.baidu.com/s/1spt0kYU3OqsQSND-be4UaA) [[Google Drive]](https://drive.google.com/file/d/18bs_mAREhLipaM2qvhxs7u7ff2VSHet2/view?usp=sharing) <br>
-LOL-v2 (the extension work): Wenhan Yang, Haofeng Huang, Wenjing Wang, Shiqi Wang, and Jiaying Liu. "Sparse Gradient Regularized Deep Retinex Network for Robust Low-Light Image Enhancement", TIP, 2021. [[Baiduyun (extracted code: l9xm)]](https://pan.baidu.com/s/1U9ePTfeLlnEbr5dtI1tm5g) [[Google Drive]](https://drive.google.com/file/d/1dzuLCk9_gE2bFF222n3-7GVUlSVHpMYC/view?usp=sharing) <br> <br>
-We use LOL-v2 as it is larger and more diverse. In fact, it is quite unexpected that the work of LOL-v2 is published later than this, which might also bother followers.<br> <br>
-I think you can choose which one to follow freely. <br>
-
-5. Pytorch version <br>
-Only 0.4 and 0.41 currently. <br> If you have to use more advanced versions, which might be constrained to the GPU device types, you might access Wang Hong's github for the idea to replace parts of the dataloader: [[New Dataloader]](https://github.com/hongwang01/RCDNet/tree/master/pytorch1.0%2B/for_syn/src) <br> 
-
-6. Why does stage 2 have two branches? <br>
-The distributions of LOL and LIME, NPE, VV, DICM are quite different. <br>
-We empirically found that it will lead to better performance if two models and the corresponding training data are adopted.
+(TBD)
 
 
 ## Contact
