@@ -3,7 +3,7 @@
 [Wenhan Yang](https://flyywh.github.io/index.html), 
 [Shiqi Wang](https://www.cs.cityu.edu.hk/~shiqwang/), 
 [Yuming Fang](https://sites.google.com/site/leofangyuming/), 
-Yue Wang 
+Yue Wang,
 and [Jiaying Liu](http://www.icst.pku.edu.cn/struct/people/liujiaying.html) 
 
 [[Paper Link]](http://39.96.165.147/Pub%20Files/2021/ywh_tip21_2.pdf)
