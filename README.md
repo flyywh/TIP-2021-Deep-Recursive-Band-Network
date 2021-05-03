@@ -16,13 +16,15 @@ It has been widely acknowledged that under-exposure causes a variety of visual q
 #### If you find the resource useful, please cite the following :- )
 
 ```
-@InProceedings{Yang_2020_CVPR,
-author = {Yang, Wenhan and Wang, Shiqi and Fang, Yuming and Wang, Yue and Liu, Jiaying},
-title = {From Fidelity to Perceptual Quality: A Semi-Supervised Approach for Low-Light Image Enhancement},
-booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-month = {June},
-year = {2020}
-}
+@ARTICLE{Yang_2021_TIP_DRBN,
+  author={Yang, Wenhan and Wang, Shiqi and Fang, Yuming and Wang, Yue and Liu, Jiaying},
+  journal={IEEE Transactions on Image Processing}, 
+  title={Band Representation-Based Semi-Supervised Low-Light Image Enhancement: Bridging the Gap Between Signal Fidelity and Perceptual Quality}, 
+  year={2021},
+  volume={30},
+  number={},
+  pages={3461-3473},
+  doi={10.1109/TIP.2021.3062184}}
 ```
 <img src="teaser/teaser_DRBN.png" > 
 
